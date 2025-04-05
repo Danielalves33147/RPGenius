@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>RPGenius – Co-Mestre de RPG</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <h3 class="navbar__logo">RPGenius</h3>
+    <button class="navbar__button" id="themeToggler"><i class="bx bx-sun"></i></button>
+  </nav>
+
+  <header class="header">
+    <div class="header__title">
+      <h1>Saudações, Mestre!</h1>
+      <h2>Como posso auxiliá-lo hoje em sua campanha?</h2>
+    </div>
+    <div class="suggests">
+      <div class="suggests__item">
+        <p class="suggests__item-text">
+          Sugira um encontro aleatório para um grupo de aventureiros
+        </p>
+        <div class="suggests__item-icon">
+          <i class="bx bx-stopwatch"></i>
+        </div>
+      </div>
+      <div class="suggests__item">
+        <p class="suggests__item-text">
+          Ajude a criar um item mágico exclusivo
+        </p>
+        <div class="suggests__item-icon">
+          <i class="bx bx-edit-alt"></i>
+        </div>
+      </div>
+      <div class="suggests__item">
+        <p class="suggests__item-text">
+          Explique como funciona a magia Disjunção de Mordenkainen
+        </p>
+        <div class="suggests__item-icon">
+          <i class="bx bx-compass"></i>
+        </div>
+      </div>
+      <div class="suggests__item">
+        <p class="suggests__item-text">
+          Gere uma missão baseada em intrigas políticas
+        </p>
+        <div class="suggests__item-icon">
+          <i class="bx bx-wrench"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="chats"></section>
+
+  <section class="prompt">
+    <form action="#" class="prompt__form" novalidate>
+      <div class="prompt__input-wrapper">
+        <input type="text" placeholder="Digite aqui sua pergunta ou comando..." class="prompt__form-input" required />
+        <button class="prompt__form-button" id="sendButton">
+          <i class="bx bx-send"></i>
+        </button>
+        <button class="prompt__form-button" id="deleteButton">
+          <i class="bx bx-trash"></i>
+        </button>
+      </div>
+    </form>
+    <p class="prompt__disclaim">
+      As respostas podem variar com base no conteúdo dos livros conectados. Sempre revise antes de aplicar em sua mesa!
+    </p>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
